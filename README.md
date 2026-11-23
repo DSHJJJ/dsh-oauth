@@ -6,7 +6,7 @@
 [![CI](https://github.com/DSHJJJ/dsh-oauth/actions/workflows/ci.yml/badge.svg)](https://github.com/DSHJJJ/dsh-oauth/actions/workflows/ci.yml)
 [![license](https://img.shields.io/npm/l/@dshj/dsh-oauth)](LICENSE)
 
-<img src="https://raw.githubusercontent.com/DSHJJJ/dsh-oauth/main/docs/login.png" width="520" alt="DeepSeek Harness sign-in page showing Continue with GitHub and Continue with Feishu">
+![The DeepSeek Harness sign-in page with Continue with GitHub and Continue with Feishu](https://raw.githubusercontent.com/DSHJJJ/dsh-oauth/main/docs/login.png)
 
 OAuth / OIDC sign-in for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web, built as a DSH bundle.
 Nine providers are built in — **GitHub, Google, GitLab, Gitee, Microsoft Entra, Discord, Slack, Keycloak/any OIDC issuer and Feishu/Lark** — and
@@ -39,7 +39,7 @@ profile loader asks for it; from then on every change is live.
 
 ## Add a provider
 
-<img src="https://raw.githubusercontent.com/DSHJJJ/dsh-oauth/main/docs/provider-form.png" width="620" alt="Settings → OAuth, adding a Google provider with client ID, secret and allowed accounts">
+![Settings → OAuth, adding a Google provider: client ID, client secret and the allowed accounts, above the exact callback URL to register](https://raw.githubusercontent.com/DSHJJJ/dsh-oauth/main/docs/provider-form.png)
 
 1. Create an OAuth client at the provider. The form shows the exact callback to register —
    `<public url>/oauth/<provider id>/callback`.
@@ -52,7 +52,7 @@ Feishu `open_id`, and so on. Leave it empty and nobody gets in; that is the inte
 
 ## What it looks like
 
-<img src="https://raw.githubusercontent.com/DSHJJJ/dsh-oauth/main/docs/settings.png" width="720" alt="Settings → OAuth listing configured GitHub and Feishu providers above the catalog of providers that can be added">
+![Settings → OAuth listing the configured GitHub and Feishu providers above the catalog of providers that can be added](https://raw.githubusercontent.com/DSHJJJ/dsh-oauth/main/docs/settings.png)
 
 The same panel in Chinese: [`docs/settings.zh.png`](docs/settings.zh.png).
 
@@ -211,7 +211,7 @@ MIT © jokcy
 
 DeepSeek Harness Web 的第三方 OAuth / OIDC 登录插件，host + client 双端 bundle。
 
-<img src="https://raw.githubusercontent.com/DSHJJJ/dsh-oauth/main/docs/settings.zh.png" width="720" alt="设置 → OAuth 面板：已配置的 GitHub 与飞书提供方，以及可添加的提供方列表">
+![设置 → OAuth 面板：已配置的 GitHub 与飞书提供方，以及可添加的提供方列表](https://raw.githubusercontent.com/DSHJJJ/dsh-oauth/main/docs/settings.zh.png)
 
 **为什么用它**：DSH 0.2.3 把认证开放给插件，这个 bundle 让登录墙变成应用的一部分，而不是反向代理里的一层——
 不用再起 oauth2-proxy 容器，不用在 Caddy 里 `import protected`，也不用两个进程共享 cookie secret。
