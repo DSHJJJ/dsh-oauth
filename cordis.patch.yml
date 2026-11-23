@@ -1,4 +1,4 @@
-# dsh-oauth-github — bundle patch layer.
+# dsh-oauth — bundle patch layer.
 #
 # Inserted after every shipped bundle layer, so `@deepseek-ai/dsh-client-connection`
 # (and its `connection.authentication` registry) is already mounted when this row
