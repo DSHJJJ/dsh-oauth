@@ -154,10 +154,10 @@ src/
 
 1. Bump `version` in `package.json` and update `CHANGELOG.md`.
 2. Commit, then tag: `git tag vX.Y.Z && git push origin vX.Y.Z`.
-3. The `Publish` workflow builds, verifies the committed bundle, and publishes with provenance.
+3. The `Publish` workflow builds, verifies the committed bundle, and **stages** the version with provenance (`npm stage publish`).
 
-New package names (and any first publish) go through npm staged publishing: the version waits for a
-maintainer approval on npmjs.com before it becomes installable.
+Staged publishing is deliberate: the trusted publisher only has the *stage* permission, so a maintainer
+must approve each release on npmjs.com with 2FA before it becomes installable.
 
 ## License
 
