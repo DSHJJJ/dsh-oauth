@@ -1,0 +1,66 @@
+{
+  "name": "@dshj/dsh-oauth-github",
+  "version": "0.1.0",
+  "description": "Third-party OAuth login for DeepSeek Harness Web: GitHub, Google, GitLab, Gitee, Microsoft, Discord, Slack, Feishu/Lark and any OIDC issuer, configured from a schema-driven settings page.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=24.9.0"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "oauth",
+    "oidc",
+    "sso",
+    "github-oauth",
+    "feishu",
+    "lark"
+  ],
+  "license": "MIT",
+  "author": "jokcy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSHJJJ/dsh-oauth-github.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DSHJJJ/dsh-oauth-github/issues"
+  },
+  "homepage": "https://github.com/DSHJJJ/dsh-oauth-github#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
