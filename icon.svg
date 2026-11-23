@@ -1,0 +1,15 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="rotate(-40 18 18)">
+    <path d="M10 12.8a5.2 5.2 0 1 1 0 10.4 5.2 5.2 0 0 1 0-10.4Zm0 2.9a2.3 2.3 0 1 0 0 4.6 2.3 2.3 0 0 0 0-4.6Z" fill="url(#oauth-key)" fill-rule="evenodd" clip-rule="evenodd" />
+    <path d="M14.3 16.35h14a1.65 1.65 0 0 1 0 3.3h-14a1.65 1.65 0 0 1 0-3.3Z" fill="url(#oauth-key)" />
+    <rect x="23.4" y="19.35" width="2.6" height="3.5" rx="0.9" fill="url(#oauth-key)" />
+    <rect x="19.4" y="19.35" width="2.1" height="2.5" rx="0.85" fill="url(#oauth-key)" />
+  </g>
+  <defs>
+    <linearGradient id="oauth-key" x1="5" y1="18" x2="29" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67C7FE" />
+      <stop offset="0.55" stop-color="#3F77D8" />
+      <stop offset="1" stop-color="#5269E1" />
+    </linearGradient>
+  </defs>
+</svg>

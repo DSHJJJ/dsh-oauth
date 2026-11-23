@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OAuth sign-in",
+    "description": "Let people sign in to DSH Web with GitHub, Google, GitLab, Gitee, Microsoft, Discord, Slack, Feishu/Lark or any OIDC issuer. Configure it in Settings → OAuth: pick a provider, paste its client ID and secret, list the accounts allowed in. Changes apply on the next request, with no restart, and removing an account locks it out immediately."
+  }
+}

@@ -6,7 +6,7 @@ export type HostLocale = 'en' | 'zh'
 interface HostText {
   loginTitle: string
   loginIntro: string
-  loginWith: string
+  loginWith: (provider: string) => string
   noneConfigured: string
   otherMethods: string
   nativeLogin: string
@@ -30,7 +30,7 @@ interface HostText {
 const EN: HostText = {
   loginTitle: 'Sign in to DeepSeek Harness',
   loginIntro: 'Continue with a third-party account.',
-  loginWith: 'Continue with',
+  loginWith: (provider) => `Continue with ${provider}`,
   noneConfigured: 'No third-party sign-in method is enabled.',
   otherMethods: 'Other methods:',
   nativeLogin: 'Local token / device pairing',
@@ -54,7 +54,7 @@ const EN: HostText = {
 const ZH: HostText = {
   loginTitle: '登录 DeepSeek Harness',
   loginIntro: '使用第三方账号验证身份后进入。',
-  loginWith: '使用以下方式登录：',
+  loginWith: (provider) => `使用 ${provider} 登录`,
   noneConfigured: '尚未启用第三方登录方式。',
   otherMethods: '其他方式：',
   nativeLogin: '本机 Token / 设备配对',

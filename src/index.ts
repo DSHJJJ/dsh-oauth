@@ -110,7 +110,7 @@ function loginPage(
   const buttons = instances
     .map(
       (instance) =>
-        `<a class="button" href="${escapeHtml(`${basePath}oauth/${instance.id}/start`)}">${escapeHtml(`${t.loginWith} ${instance.label}`)}</a>`,
+        `<a class="button" href="${escapeHtml(`${basePath}oauth/${instance.id}/start`)}">${escapeHtml(t.loginWith(instance.label))}</a>`,
     )
     .join('')
   const none = instances.length === 0 ? `<p>${t.noneConfigured}</p>` : ''

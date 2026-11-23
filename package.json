@@ -1,18 +1,22 @@
 {
   "name": "@dshj/dsh-oauth",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Third-party OAuth login for DeepSeek Harness Web: GitHub, Google, GitLab, Gitee, Microsoft, Discord, Slack, Feishu/Lark and any OIDC issuer, configured from a schema-driven settings page.",
   "type": "module",
   "main": "./lib/index.js",
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
     "./package.json": "./package.json"
   },
   "files": [
     "lib/index.js",
     "lib/client.js",
     "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
     "README.md",
     "LICENSE"
   ],
@@ -25,7 +29,8 @@
     }
   },
   "engines": {
-    "node": ">=24.9.0"
+    "node": ">=24.9.0",
+    "dsh": "^0.2.3-alpha.2"
   },
   "scripts": {
     "build": "node build.mjs",

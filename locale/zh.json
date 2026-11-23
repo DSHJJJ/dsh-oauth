@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "OAuth 登录",
+    "description": "用 GitHub、Google、GitLab、Gitee、Microsoft、Discord、Slack、飞书/Lark 或任意 OIDC 登录 DSH Web。在「设置 → OAuth」里选 provider、填 Client ID / Secret、列出允许的账号即可。保存后下一个请求就生效，不用重启；把账号从白名单删掉，它的会话立刻失效。"
+  }
+}
