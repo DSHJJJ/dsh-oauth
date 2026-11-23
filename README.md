@@ -1,5 +1,8 @@
 # dsh-oauth-github
 
+[![npm](https://img.shields.io/npm/v/@dshj/dsh-oauth-github)](https://www.npmjs.com/package/@dshj/dsh-oauth-github)
+[![CI](https://github.com/DSHJJJ/dsh-oauth-github/actions/workflows/ci.yml/badge.svg)](https://github.com/DSHJJJ/dsh-oauth-github/actions/workflows/ci.yml)
+
 Third-party OAuth / OIDC sign-in for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web, built as a DSH bundle (host + client halves).
 
 Configure providers from **Settings → OAuth** — every change applies on the next request, no restart. Built-in providers: **GitHub, Google, GitLab, Gitee, Microsoft Entra, Discord, Slack, Keycloak/any OIDC issuer, and Feishu/Lark** (with one-click app creation by QR code).
