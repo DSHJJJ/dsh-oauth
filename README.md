@@ -28,7 +28,7 @@ or, from a checkout:
 
 ```bash
 cd your-profile-dir
-pnpm add link:../path/to/dsh-oauth-github
+pnpm add link:../path/to/dsh-oauth
 # then add "@dshj/dsh-oauth" to dsh.profile.bundles in package.json
 ```
 
