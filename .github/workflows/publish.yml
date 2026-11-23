@@ -23,6 +23,14 @@ jobs:
       - run: npm run build
       - name: Ensure the committed bundle matches the build
         run: git diff --exit-code -- lib
+      - name: Require an npm automation token
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if [ -z "$NODE_AUTH_TOKEN" ]; then
+            echo "::error::NPM_TOKEN is empty. Add an npm Automation (or 2FA-bypassing granular) token as an organization/repository secret."
+            exit 1
+          fi
       - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
