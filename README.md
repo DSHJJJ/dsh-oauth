@@ -150,6 +150,15 @@ src/
 
 `lib/` is built output and is committed so the plugin can be linked without a build step.
 
+## Releasing
+
+1. Bump `version` in `package.json` and update `CHANGELOG.md`.
+2. Commit, then tag: `git tag vX.Y.Z && git push origin vX.Y.Z`.
+3. The `Publish` workflow builds, verifies the committed bundle, and publishes with provenance.
+
+New package names (and any first publish) go through npm staged publishing: the version waits for a
+maintainer approval on npmjs.com before it becomes installable.
+
 ## License
 
 MIT © jokcy

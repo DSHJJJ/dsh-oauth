@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Document the release flow and verify publishing through the GitHub Actions workflow.
+
 ## 0.1.0
 
 - Initial release.
