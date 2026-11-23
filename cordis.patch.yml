@@ -6,4 +6,4 @@
 # cordis.patch.yml under the `oauth-github` id — never in this file.
 - insert:
     - id: oauth-github
-      name: '@dshj/dsh-oauth-github'
+      name: '@dshj/dsh-oauth'

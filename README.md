@@ -1,7 +1,7 @@
-# dsh-oauth-github
+# dsh-oauth
 
-[![npm](https://img.shields.io/npm/v/@dshj/dsh-oauth-github)](https://www.npmjs.com/package/@dshj/dsh-oauth-github)
-[![CI](https://github.com/DSHJJJ/dsh-oauth-github/actions/workflows/ci.yml/badge.svg)](https://github.com/DSHJJJ/dsh-oauth-github/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/@dshj/dsh-oauth)](https://www.npmjs.com/package/@dshj/dsh-oauth)
+[![CI](https://github.com/DSHJJJ/dsh-oauth/actions/workflows/ci.yml/badge.svg)](https://github.com/DSHJJJ/dsh-oauth/actions/workflows/ci.yml)
 
 Third-party OAuth / OIDC sign-in for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web, built as a DSH bundle (host + client halves).
 
@@ -21,7 +21,7 @@ Configure providers from **Settings → OAuth** — every change applies on the 
 
 ```bash
 # in a DSH profile
-dsh plugin --profile web add @dshj/dsh-oauth-github
+dsh plugin --profile web add @dshj/dsh-oauth
 ```
 
 or, from a checkout:
@@ -29,7 +29,7 @@ or, from a checkout:
 ```bash
 cd your-profile-dir
 pnpm add link:../path/to/dsh-oauth-github
-# then add "@dshj/dsh-oauth-github" to dsh.profile.bundles in package.json
+# then add "@dshj/dsh-oauth" to dsh.profile.bundles in package.json
 ```
 
 The bundle inserts one row (`oauth-github`). Its settings page appears automatically.

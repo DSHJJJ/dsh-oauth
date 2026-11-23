@@ -1,5 +1,5 @@
 {
-  "name": "@dshj/dsh-oauth-github",
+  "name": "@dshj/dsh-oauth",
   "version": "0.1.0",
   "description": "Third-party OAuth login for DeepSeek Harness Web: GitHub, Google, GitLab, Gitee, Microsoft, Discord, Slack, Feishu/Lark and any OIDC issuer, configured from a schema-driven settings page.",
   "type": "module",
@@ -48,12 +48,12 @@
   "author": "jokcy",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DSHJJJ/dsh-oauth-github.git"
+    "url": "git+https://github.com/DSHJJJ/dsh-oauth.git"
   },
   "bugs": {
-    "url": "https://github.com/DSHJJJ/dsh-oauth-github/issues"
+    "url": "https://github.com/DSHJJJ/dsh-oauth/issues"
   },
-  "homepage": "https://github.com/DSHJJJ/dsh-oauth-github#readme",
+  "homepage": "https://github.com/DSHJJJ/dsh-oauth#readme",
   "devDependencies": {
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
